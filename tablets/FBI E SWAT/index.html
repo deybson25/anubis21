@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FBI - Departamento Federal ZER01</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <div class="badge">FBI</div>
+      <div>
+        <h1>FBI</h1>
+        <span>Departamento Federal • ZER01</span>
+      </div>
+    </div>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#divisoes">Divisões</a>
+      <a href="#hierarquia">Hierarquia</a>
+      <a href="#regras">Regras</a>
+      <a href="#recrutamento">Recrutamento</a>
+      <a href="denuncia.html">Denúncia</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <p class="tag">Ordem • Justiça • Disciplina</p>
+      <h2>Bem-vindo ao site oficial do FBI da cidade ZER01</h2>
+      <p>
+        Um departamento federal focado em investigação, operações especiais,
+        combate ao crime organizado e proteção da cidade.
+      </p>
+      <div class="buttons">
+        <a href="#recrutamento" class="btn primary">Entrar para o FBI</a>
+        <a href="#divisoes" class="btn">Conhecer Divisões</a>
+        <a href="apostila/index.html" class="btn">Apostila</a>
+        <a href="denuncia.html" class="btn danger">Abrir Denúncia</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="sobre" class="section">
+      <h2>Sobre o FBI</h2>
+      <p>
+        O FBI é uma força de elite dentro da cidade ZER01. Nossa missão é
+        investigar crimes complexos, proteger cidadãos, apoiar operações
+        policiais e manter a ordem com respeito às regras da cidade.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Missão</h3>
+          <p>Combater crimes federais, facções, corrupção e ameaças à segurança pública.</p>
+        </div>
+        <div class="card">
+          <h3>Visão</h3>
+          <p>Ser a corporação mais preparada, respeitada e organizada da cidade.</p>
+        </div>
+        <div class="card">
+          <h3>Valores</h3>
+          <p>Honra, disciplina, respeito, lealdade, inteligência e trabalho em equipe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="divisoes" class="section dark">
+      <h2>Divisões do FBI</h2>
+      <div class="grid">
+        <div class="division">
+          <h3>Investigação Federal</h3>
+          <p>Responsável por coletar provas, interrogar suspeitos e montar operações contra criminosos.</p>
+        </div>
+        <div class="division">
+          <h3>Operações Táticas</h3>
+          <p>Equipe de ação em perseguições, invasões, resgates e situações de alto risco.</p>
+        </div>
+        <div class="division">
+          <h3>Inteligência</h3>
+          <p>Analisa informações, monitora facções e cria relatórios para operações especiais.</p>
+        </div>
+        <div class="division">
+          <h3>Corregedoria</h3>
+          <p>Fiscaliza a conduta dos agentes, punições internas e cumprimento do regulamento.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="hierarquia" class="section">
+      <h2>Hierarquia</h2>
+      <div class="rank-list">
+        <span>Diretor Geral</span>
+        <span>Vice-Diretor</span>
+        <span>Comandante Federal</span>
+        <span>Supervisor</span>
+        <span>Agente Especial</span>
+        <span>Agente Federal</span>
+        <span>Recruta</span>
+      </div>
+    </section>
+
+    <section id="regras" class="section dark">
+      <h2>Regras Principais</h2>
+      <ul class="rules">
+        <li>Respeitar todos os cidadãos e membros da corporação.</li>
+        <li>Não abusar do poder policial.</li>
+        <li>Usar rádio e códigos corretamente durante patrulhas.</li>
+        <li>Não agir sozinho em operações grandes sem autorização.</li>
+        <li>Seguir sempre as regras da cidade e do servidor.</li>
+        <li>Manter postura profissional dentro e fora de serviço.</li>
+      </ul>
+    </section>
+
+    <section id="recrutamento" class="section">
+      <h2>Recrutamento FBI</h2>
+
+      <p>
+        Preencha corretamente todas as informações e responda o teste abaixo.
+        Ao enviar, a inscrição será encaminhada para o Discord do FBI.
+      </p>
+
+      <form id="formulario" class="form">
+
+        <input type="text" id="nome" placeholder="Seu nome no RP" required />
+
+        <input type="number" id="idade" placeholder="Sua idade" required />
+
+        <input type="text" id="discord" placeholder="Seu Discord" required />
+
+        <input type="text" id="idgame" placeholder="Seu ID no jogo" required />
+
+        <input type="text" id="tempo" placeholder="Quanto tempo joga por dia?" required />
+
+        <input type="text" id="faccoes" placeholder="Já participou de alguma facção? Qual?" required />
+
+        <select id="microfone" required>
+          <option value="">Possui microfone?</option>
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+
+        <select id="experiencia" required>
+          <option value="">Já teve experiência policial?</option>
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+
+        <select id="departamento" required>
+          <option value="">Que departamento deseja ingressar?</option>
+          <option>FBI</option>
+          <option>SWAT</option>
+        </select>
+
+        <textarea id="motivo"
+          placeholder="Por que deseja entrar para o FBI?"
+          required></textarea>
+
+        <h3>SESSÃO 1 - TESTE FBI</h3>
+
+        <label for="funcao_fbi">Qual a função do FBI?</label>
+        <textarea id="funcao_fbi"
+          placeholder="Resposta... Pelo menos de 1 a 2 linhas."
+          required></textarea>
+
+        <label for="suspeito_alterado">
+          Você encontra um suspeito com comportamento alterado na abordagem, qual seria sua reação?
+        </label>
+        <textarea id="suspeito_alterado"
+          placeholder="Resposta... Pelo menos de 1 a 2 linhas."
+          required></textarea>
+
+        <label for="prova_crime">
+          O que você faria ao encontrar prova de um crime? E como lidaria com isso?
+        </label>
+        <textarea id="prova_crime"
+          placeholder="Resposta... Pelo menos de 1 a 2 linhas."
+          required></textarea>
+
+        <label for="cadeia_custodia">O que é cadeia de custódia?</label>
+        <textarea id="cadeia_custodia"
+          placeholder="Resposta... Pelo menos de 1 a 2 linhas."
+          required></textarea>
+
+        <h3>SESSÃO 2 - OCORRÊNCIA</h3>
+
+        <label for="suspeito_armado">
+          Você avista um suspeito fugindo armado, o que fazer?
+        </label>
+        <textarea id="suspeito_armado"
+          placeholder="Resposta... Pelo menos de 1 a 2 linhas."
+          required></textarea>
+
+        <label for="parceiro_ferido">
+          Se um parceiro é ferido durante a ocorrência, o que você faz?
+        </label>
+        <textarea id="parceiro_ferido"
+          placeholder="Resposta... Pelo menos de 1 a 2 linhas."
+          required></textarea>
+
+        <label for="operacao_refem">
+          Como agir em uma operação com refém?
+        </label>
+        <textarea id="operacao_refem"
+          placeholder="Resposta... Pelo menos de 1 a 2 linhas."
+          required></textarea>
+
+        <label for="profissionalismo">
+          O que significa agir com profissionalismo dentro da corporação?
+        </label>
+        <textarea id="profissionalismo"
+          placeholder="Resposta... Pelo menos de 1 a 2 linhas."
+          required></textarea>
+
+        <button type="submit" class="btn primary">
+          Enviar inscrição
+        </button>
+
+      </form>
+
+      <p id="mensagem" class="mensagem"></p>
+    </section>
+
+     <section id="2" class="section contact">
+      <h2>Material de Estudo</h2>
+      <p>Um módulo de estudo completo</p>
+      <a href="apostila/index.html" class="btn">Apostila</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FBI ZER01 • Site criado para servidor RP</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

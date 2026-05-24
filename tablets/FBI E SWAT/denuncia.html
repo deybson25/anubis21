@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denúncias FBI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">
+    <div class="badge">FBI</div>
+    <div>
+      <h1>FBI</h1>
+      <span>Departamento Federal • Denúncias</span>
+    </div>
+  </div>
+
+  <button class="menu-btn" id="menuBtn">☰</button>
+
+  <nav id="menu">
+    <a href="index.html#inicio">Início</a>
+    <a href="index.html#recrutamento">Recrutamento</a>
+    <a href="denuncia.html">Denúncia</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="hero-content">
+    <h2>Abrir Denúncia</h2>
+  </div>
+</section>
+
+<main>
+<section class="section">
+
+<form id="formDenuncia" class="form investigation-form">
+
+<h3>DADOS DO DENUNCIANTE</h3>
+
+<input type="text" id="nomeDenunciante" placeholder="Seu Nome" required>
+<input type="text" id="passaporte" placeholder="Seu Passaporte" required>
+<input type="text" id="telefone" placeholder="Seu Telefone" required>
+
+<h3>DADOS DO SUSPEITO</h3>
+
+<input type="text" id="nomeSuspeitoDenuncia" placeholder="Nome do suspeito" required>
+
+<h3>SELECIONE OS CRIMES</h3>
+
+<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 campos2">
+
+<select id="crimesDenuncia" class="form-control col-xs-12 col-lg-6 col-md-6 col-sm-6 campos2" multiple required>
+
+<option value="Homicídio">Homicídio</option>
+<option value="Tentativa de homicídio">Tentativa de homicídio</option>
+<option value="Sequestro">Sequestro</option>
+<option value="Roubo">Roubo</option>
+<option value="Roubo a banco">Roubo a banco</option>
+<option value="Assalto a mão armada">Assalto a mão armada</option>
+<option value="Tráfico de drogas">Tráfico de drogas</option>
+<option value="Tráfico de armas">Tráfico de armas</option>
+<option value="Porte ilegal de arma">Porte ilegal de arma</option>
+<option value="Fuga da polícia">Fuga da polícia</option>
+<option value="Desacato">Desacato</option>
+<option value="Corrupção">Corrupção</option>
+<option value="Abuso de poder">Abuso de poder</option>
+<option value="Extorsão">Extorsão</option>
+<option value="Lavagem de dinheiro">Lavagem de dinheiro</option>
+<option value="Organização criminosa">Organização criminosa</option>
+<option value="Terrorismo">Terrorismo</option>
+<option value="Espionagem">Espionagem</option>
+<option value="Outro">Outro</option>
+
+</select>
+
+</div>
+
+<small>Segure CTRL para selecionar mais de um crime.</small>
+
+<textarea id="descricaoDenuncia" placeholder="Descreva a denúncia" required></textarea>
+<textarea id="linksProvas" placeholder="Links das provas. Envie aqui os vídeos da GoPro." required></textarea>
+
+<label>Enviar provas (imagens/vídeos)</label>
+<input type="file" id="arquivosProvasDenuncia" multiple accept="image/*,video/*">
+
+<button type="submit" class="btn danger">
+Enviar denúncia
+</button>
+
+</form>
+
+<p id="mensagemDenuncia" class="mensagem"></p>
+
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FBI - Abrir Investigação</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <div class="badge">FBI</div>
+      <div>
+        <h1>FBI</h1>
+        <span>Departamento Federal • Investigação</span>
+      </div>
+    </div>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+  </header>
+
+  <section class="page-hero">
+    <div class="hero-content">
+      <p class="tag">Sistema interno FBI</p>
+      <h2>Abrir Investigação</h2>
+      <p>Preencha o relatório abaixo com o máximo de detalhes para registrar uma investigação da polícia/FBI.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <h2>Formulário de Investigação</h2>
+      <p>As informações serão enviadas para o canal do Discord configurado no Webhook.</p>
+
+      <form id="formInvestigacao" class="form investigation-form">
+        <h3>DADOS DO AGENTE</h3>
+
+        <input type="text" id="agente" placeholder="Nome do agente responsável" required />
+        <input type="text" id="cargo" placeholder="Cargo / patente" required />
+        <input type="text" id="discordAgente" placeholder="Discord do agente" required />
+
+        <h3>DADOS DO SUSPEITO</h3>
+
+        <input type="text" id="suspeito" placeholder="Nome do suspeito no RP" required />
+        <input type="text" id="idSuspeito" placeholder="ID do suspeito, se souber" />
+        <input type="text" id="organizacao" placeholder="Facção/organização envolvida, se tiver" />
+
+        <h3>TIPO DA INVESTIGAÇÃO</h3>
+
+        <select id="tipoInvestigacao" required>
+          <option value="">Selecione o tipo de investigação</option>
+          <option>Tráfico de drogas</option>
+          <option>Tráfico de armas</option>
+          <option>Sequestro</option>
+          <option>Roubo a banco</option>
+          <option>Homicídio</option>
+          <option>Corrupção</option>
+          <option>Terrorismo</option>
+          <option>Espionagem</option>
+          <option>Crime organizado</option>
+          <option>Outro</option>
+        </select>
+
+        <select id="prioridade" required>
+          <option value="">Prioridade</option>
+          <option>Baixa</option>
+          <option>Média</option>
+          <option>Alta</option>
+          <option>Urgente</option>
+        </select>
+
+        <input type="text" id="localOcorrencia" placeholder="Local da ocorrência" required />
+        <input type="datetime-local" id="dataOcorrencia" required />
+
+        <h3>RELATÓRIO DA INVESTIGAÇÃO</h3>
+
+        <textarea id="relato" placeholder="Descreva tudo que aconteceu na ocorrência" required></textarea>
+        <textarea id="provas" placeholder="Liste as provas coletadas: prints, vídeos, testemunhas, itens apreendidos..." required></textarea>
+        <textarea id="testemunhas" placeholder="Nome das testemunhas, se tiver"></textarea>
+        <textarea id="medidas" placeholder="Quais medidas foram tomadas pela polícia/FBI?" required></textarea>
+        <textarea id="observacoes" placeholder="Observações finais"></textarea>
+
+        <h3>STATUS</h3>
+
+        <select id="statusInvestigacao" required>
+          <option value="">Status da investigação</option>
+          <option>Aberta</option>
+          <option>Em análise</option>
+          <option>Aguardando provas</option>
+          <option>Encaminhada para comando</option>
+          <option>Finalizada</option>
+        </select>
+
+        <button type="submit" class="btn primary">Enviar investigação para o Discord</button>
+      </form>
+
+      <p id="mensagemInvestigacao" class="mensagem"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FBI ZER01 • Sistema de Investigação</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
